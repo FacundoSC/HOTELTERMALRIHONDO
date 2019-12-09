@@ -29,6 +29,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="//fonts.googleapis.com/css?family=Federo" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 <!--//fonts-->
+
+
 </head>
 <body>
 <!-- header -->
@@ -175,14 +177,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //Modal1 -->
 <div id="availability-agileits">
 <div class="col-md-3 book-form-left-w3layouts">
-	<h2>CHECK AVAILABILITY</h2>
+	<h2>CONSULTAR DISPONIBILIDAD</h2>
 </div>
 <div class="col-md-9 book-form">
 			   <form action="#" method="post">
 					<div class="fields-w3ls form-left-agileits-w3layouts ">
-							<p>Room Type</p>
+							<p>TIPO DE HABITACIÓN</p>
 							<select class="form-control">
-								<option>Select a Room</option>
+								<option>Selecciona tu tipo de habitación</option>
 								<option>Luxury Room</option>
 								<option>Deluxe Room</option>
 								<option>Single Room</option>
@@ -190,16 +192,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</select>
 					</div>
 					<div class="fields-w3ls form-date-w3-agileits">
-						        <p>Arrival Date</p>
-									<input  id="datepicker1" name="Text" type="text" value="Select Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+						        <p>Fecha de llegada</p>
+									<input  id="datepicker1" name="Text" type="text" value="Selección de Fecha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
 								<div class="fields-w3ls form-date-w3-agileits">
-						        <p>Departure Date</p>
-									<input  id="datepicker2" name="Text" type="text" value="Select Date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+						        <p>Fecha de salida</p>
+									<input  id="datepicker2" name="Text" type="text" value="Selección de Fecha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
 								</div>
 					
 					<div class=" form-left-agileits-submit">
-						  <input type="submit" value="Check Availability">
+						  <input type="submit" value="Consultar disponibilidad">
 					</div>
 				</form>
 			</div>
@@ -269,7 +271,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="advantages">
 	<div class="container">
 		<div class="advantages-main">
-				<h3 class="title-w3-agileits">Our Services</h3>
+				<h3 class="title-w3-agileits">Nuestros Servicios</h3>
 		   <div class="advantage-bottom">
 			 <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
 			 	<div class="advantage-block ">
@@ -395,7 +397,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //team -->
 <!-- Gallery -->
 <section class="portfolio-w3ls" id="gallery">
-		 <h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
+		 <h3 class="title-w3-agileits title-black-wthree"> galeria de fotos</h3>
 				<div class="col-md-3 gallery-grid gallery1">
 					<a href="images/g1.jpg" class="swipebox"><img src="images/g1.jpg" class="img-responsive" alt="/">
 						<div class="textbox">
@@ -786,6 +788,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>	
 <!-- /contact form -->	
+
+<script>
+
+ $.datepicker.regional['es'] = {
+ closeText: 'Cerrar',
+ prevText: '< Ant',
+ nextText: 'Sig >',
+ currentText: 'Hoy',
+ monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+ monthNamesShort: ['Ene','Feb','Mar','Abr', 'May','Jun','Jul','Ago','Sep', 'Oct','Nov','Dic'],
+ dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+ dayNamesShort: ['Dom','Lun','Mar','Mié','Juv','Vie','Sáb'],
+ dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sá'],
+ weekHeader: 'Sm',
+ dateFormat: 'dd/mm/yy',
+ firstDay: 1,
+ isRTL: false,
+ showMonthAfterYear: false,
+ yearSuffix: ''
+ };
+ $.datepicker.setDefaults($.datepicker.regional['es']);
+$(function () {
+$("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+});
+</script>
+
+
+
+
 <!-- Calendar -->
 		<script src="js/jquery-ui.js"></script>
 		<script>
