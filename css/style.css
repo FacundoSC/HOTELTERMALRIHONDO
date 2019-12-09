@@ -1541,10 +1541,10 @@ section.contact-w3ls label.contact-p1 {
 section.contact-w3ls p.help-block {
     color:#ff0500!important;
 }
-section.contact-w3ls input#name, section.contact-w3ls input#email, section.contact-w3ls input#phone  {
+section.contact-w3ls input#name, section.contact-w3ls input#email, section.contact-w3ls input#phone {
 	height:37px;
 }
-section.contact-w3ls input#name, section.contact-w3ls input#email, section.contact-w3ls input#phone {
+section.contact-w3ls input#name, section.contact-w3ls input#email, section.contact-w3ls input#phone, section.contact-w3ls textarea#sugerencia  {
 	font-size:17px;
 	font-weight:normal;
 	color:#fff;
@@ -1553,6 +1553,10 @@ section.contact-w3ls input#name, section.contact-w3ls input#email, section.conta
 	border-color:#fff;
 	font-family: 'Lato', sans-serif;
 }
+
+
+
+
 section.contact-w3ls button.btn.btn-primary {
 	color:#ffce14;
     background-color:transparent;
