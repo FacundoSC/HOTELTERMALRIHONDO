@@ -20,6 +20,29 @@ Author URL: https://www.facebook.com/cr.tucuman/
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Resort Inn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+ <script>
+ 	
+ 	 $(document).ready(function(){
+	var altura = $('.menu').offset().top;
+	
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura ){
+			$('.facundo').addClass('menu-fixed');
+		} else {
+			$('.facundo').removeClass('menu-fixed');
+		}
+	});
+ 
+});
+
+
+
+ </script>
+
+
+
+
     <script type="application/x-javascript">
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -31,7 +54,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </script>
 
     <!-- //for-mobile-apps -->
-
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
@@ -39,6 +64,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
     <!--fonts-->
     <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
@@ -49,6 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
     <!-- header -->
+    <header>
     <div class="banner-top">
         <div class="social-bnr-agileits">
             <ul class="social-icons3">
@@ -68,7 +96,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul>
                 <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:hoteltermailriohondo@gmail.com">hoteltermailriohondo@gmail.com</a></li>
                 <li><i class="fa fa-phone" aria-hidden="true"></i>(03858) 421455 / (03858) 421538 </li>	
-                <li class="s-bar">
+               <!-- <li class="s-bar">
                     <div class="search">
                         <input class="search_box" type="checkbox" id="search_box">
                         <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
@@ -79,14 +107,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </form>
                         </div>
                     </div>
-                </li>
+                </li>-->
             </ul>
         </div>
         <div class="clearfix"></div>
     </div>
-    <div class="w3_navigation">
+    <div class=" facundo w3_navigation">
         <div class="container">
-            <nav class="navbar navbar-default">
+            <nav class="navbar sticky-top navbar-default">
                 <div class="navbar-header navbar-left">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
@@ -94,16 +122,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-                    <h1><a class="navbar-brand" href="index.html">Resort <span>Inn</span><p class="logo_w3l_agile_caption">Your Dreamy Resort</p></a></h1>
+                    <h4><p class="logo_w3l_agile_caption">Hotel</p><h2 class="navbar-brand" href="index.html" >Termal Rio Hondo</h2></h4>
+                    
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-                    <nav class="menu menu--iris">
-                        <ul class="nav navbar-nav menu__list">
+                    <nav class="menu menu--iris ">
+                        <ul class="nav  navbar-nav menu__list">
                             <li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Inicio</a></li>
                             <li class="menu__item"><a href="#banner" class="menu__link scroll">Servicios</a></li>
-                            <li class="menu__item"><a href="#gallery" class="menu__link scroll">Galeria</a></li>
-                            <li class="menu__item"><a href="reserva.html" class="menu__link scroll">Consulte su reserva</a></li>
+                            <li class="menu__item"><a href="#about" class="menu__link scroll">Nosotros</a></li>
+                            <li class="menu__item"><a href="#vamos" class="menu__link scroll">Ubicación</a></li>
+                            <li class="menu__item"><a href="#galeria" class="menu__link scroll">Galeria</a></li>
+                            <li class="menu__item"><a href="#contact" class="menu__link scroll">Contactarnos</a></li>
                             <!--
 							<li class="menu__item"><a href="#rooms" class="menu__link scroll">Rooms</a></li>
 							<li class="menu__item"><a href="#contact" class="menu__link scroll">Contact Us</a></li>
@@ -111,11 +142,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </ul>
                     </nav>
                 </div>
+                
             </nav>
-
+        </div>
         </div>
     </div>
     <!-- //header -->
+
+</header>
+
     <!-- banner -->
 	<div id="home" class="w3ls-banner">
 		<!-- banner-text -->
@@ -223,7 +258,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <input  id="datepicker2" name="Text" type="text" value="Selección de Fecha" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
                                     </div>
                         
-                        <div class=" form-left-agileits-submit">
+                        <div class="form-left-agileits-submit">
                               <input type="submit" value="Consultar disponibilidad">
                         </div>
                     </form>
@@ -234,39 +269,100 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="banner-bottom" id="banner">
         <div class="container">
             <div class="agileits_banner_bottom">
-                <h3><span>Experience a good stay, enjoy fantastic offers</span> Find our friendly welcoming reception</h3>
+            <h3 class="title-w3-agileits title-black-wthree">Nuestros Servicios</h3>
             </div>
             <div class="w3ls_banner_bottom_grids">
                 <ul class="cbp-ig-grid">
-                    <li>
-                        <div class="w3_grid_effect">
-                            <span class="cbp-ig-icon w3_road"></span>
-                            <h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
-                            <span class="cbp-ig-category">Resort Inn</span>
-                        </div>
-                    </li>
+                   
                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_cube"></span>
-                            <h4 class="cbp-ig-title">SEA VIEW BALCONY</h4>
+                            <h4 class="cbp-ig-title">bar</h4>
                             <span class="cbp-ig-category">Resort Inn</span>
                         </div>
                     </li>
-                    <li>
+
+                     <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_auto"></span>
+                            <h4 class="cbp-ig-title">cochera </h4>
+                            <span class="cbp-ig-category">Resort Inn</span>
+                        </div>
+                    </li>
+
+                     <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_sala"></span>
+                            <h4 class="cbp-ig-title">sala de estar</h4>
+                            <span class="cbp-ig-category">Resort Inn</span>
+                        </div>
+                    </li>
+
+                  
+                 
+                </ul>
+                  <br>
+
+             <ul class="cbp-ig-grid">
+
+					<li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_masaje"></span>
+                            <h4 class="cbp-ig-title">hidromasajes</h4>
+                            <span class="cbp-ig-category">Resort Inn</span>
+                        </div>
+                    </li>  
+
+                     <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_juego"></span>
+                            <h4 class="cbp-ig-title">salon de juegos</h4>
+                            <span class="cbp-ig-category">Resort Inn</span>
+                        </div>
+                    </li>
+                   
+                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_users"></span>
-                            <h4 class="cbp-ig-title">LARGE CAFE</h4>
+                            <h4 class="cbp-ig-title">desayuno</h4>
+                            <span class="cbp-ig-category">Resort Inn</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <br>
+
+                <ul class="cbp-ig-grid">
+                    
+                    <li>
+                        <div class="w3_grid_effect">
+                            <span class="cbp-ig-icon w3_bicicleta"></span>
+                            <h4 class="cbp-ig-title">gimnasio</h4>
                             <span class="cbp-ig-category">Resort Inn</span>
                         </div>
                     </li>
                     <li>
                         <div class="w3_grid_effect">
                             <span class="cbp-ig-icon w3_ticket"></span>
-                            <h4 class="cbp-ig-title">WIFI COVERAGE</h4>
-                            <span class="cbp-ig-category">Resort Inn</span>
+                            <h4 class="cbp-ig-title">WIFI</h4>
+                            <span class="cbp-ig-category"></span>
                         </div>
                     </li>
-                </ul>
+                    
+
+
+                    <li>
+                        <div class="w3_grid_effect">
+
+                        	<i class="fas fa-hot-tub"></i>
+                            <span class="cbp-ig-icon w3_spa"></span>
+
+                            <h4 class="cbp-ig-title">spa</h4>
+                            <span class="cbp-ig-category"></span>
+                        </div>
+                    </li>
+                    
+                </ul> 
             </div>
         </div>
     </div>
@@ -275,192 +371,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="about-wthree" id="about">
         <div class="container">
             <div class="ab-w3l-spa">
-                <h3 class="title-w3-agileits title-black-wthree">About Our Resort Inn</h3>
-                <p class="about-para-w3ls">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed tempus vestibulum lacus blandit faucibus. Nunc imperdiet, diam nec rhoncus ullamcorper, nisl nulla suscipit ligula, at imperdiet urna</p>
+                <h3 class="title-w3-agileits title-black-wthree">Nosotros</h3>
+                <p class="about-para-w3ls">Rodeado de tiendas y restaurantes en un barrio informal del centro, nos ubicamos a 5 minutos a pie del parque Güemes y a 8 km de los deportes motorizados que ofrece el autódromo Termas de Río Hondo.
+
+Las habitaciones son sencillas y están equipadas con Wi-Fi gratuito, TV de pantalla plana y, en algunos casos, balcón. Los apartamentos incluyen cocina en la habitación, área de estar y comedor.
+
+Se ofrece un desayuno tipo bufé en un restaurante sencillo. También cuenta con un bar abierto las 24 horas, un gimnasio y un sauna. Los otros servicios incluyen hidromasaje, una piscina al aire libre de tipo laguna y una piscina cubierta. Ambas usan agua termal.</p>
                 <img src="images/about.jpg" class="img-responsive" alt="Hair Salon">
                 <div class="w3l-slider-img">
                     <img src="images/a1.jpg" class="img-responsive" alt="Hair Salon">
                 </div>
                 <div class="w3ls-info-about">
-                    <h4>You'll love all the amenities we offer!</h4>
-                    <p>Lorem ipsum dolor sit amet, ut magna aliqua. </p>
+                    <h4>¡Te encantarán todas las comodidades que ofrecemos!</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet, ut magna aliqua. </p> -->
                 </div>
             </div>
             <div class="clearfix"> </div>
         </div>
     </div>
     <!-- //about -->
-    <!--sevices-->
-    <div class="advantages">
-        <div class="container">
-            <div class="advantages-main">
-                <h3 class="title-w3-agileits">Our Services</h3>
-                <div class="advantage-bottom">
-                    <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
-                        <div class="advantage-block ">
-                            <i class="fa fa-credit-card" aria-hidden="true"></i>
-                            <h4>Stay First, Pay After! </h4>
-                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
 
-                        </div>
-                    </div>
-                    <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
-                        <div class="advantage-block">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <h4>24 Hour Restaurant</h4>
-                            <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
-                            <p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
-                        </div>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--//sevices-->
-    <!-- team -->
-    <div class="team" id="team">
+
+    <!--ubicacion-->
+    
+    <div class="advantages" id="vamos">
         <div class="container">
-            <h3 class="title-w3-agileits title-black-wthree">Meet Our Team</h3>
-            <div id="horizontalTab">
-                <ul class="resp-tabs-list">
-                    <li>
-                        <img src="images/teams1.jpg" alt=" " class="img-responsive" />
-                    </li>
-                    <li>
-                        <img src="images/teams2.jpg" alt=" " class="img-responsive" />
-                    </li>
-                    <li>
-                        <img src="images/teams3.jpg" alt=" " class="img-responsive" />
-                    </li>
-                    <li>
-                        <img src="images/teams4.jpg" alt=" " class="img-responsive" />
-                    </li>
-                </ul>
-                <div class="resp-tabs-container">
-                    <div class="tab1">
-                        <div class="col-md-6 team-img-w3-agile">
-                        </div>
-                        <div class="col-md-6 team-Info-agileits">
-                            <h4>Lucas Jimenez</h4>
-                            <span>Manager</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
-                            <div class="social-bnr-agileits footer-icons-agileinfo">
-                                <ul class="social-icons3">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook icon-border facebook"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter icon-border twitter"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus icon-border googleplus"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-rss icon-border rss"> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="tab2">
-                        <div class="col-md-6 team-img-w3-agile">
-                        </div>
-                        <div class="col-md-6 team-Info-agileits">
-                            <h4>Sarah Connor</h4>
-                            <span>Receptionist</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
-                            <div class="social-bnr-agileits footer-icons-agileinfo">
-                                <ul class="social-icons3">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook icon-border facebook"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter icon-border twitter"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus icon-border googleplus"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-rss icon-border rss"> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="tab3">
-                        <div class="col-md-6 team-img-w3-agile">
-                        </div>
-                        <div class="col-md-6 team-Info-agileits">
-                            <h4>Ivan Simpson</h4>
-                            <span>Manager</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
-                            <div class="social-bnr-agileits footer-icons-agileinfo">
-                                <ul class="social-icons3">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook icon-border facebook"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter icon-border twitter"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus icon-border googleplus"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-rss icon-border rss"> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                    <div class="tab4">
-                        <div class="col-md-6 team-img-w3-agile">
-                        </div>
-                        <div class="col-md-6 team-Info-agileits">
-                            <h4>Marc Gutierrez</h4>
-                            <span>Receptionist</span>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.Lorem ipsum dolor .</p>
-                            <div class="social-bnr-agileits footer-icons-agileinfo">
-                                <ul class="social-icons3">
-                                    <li>
-                                        <a href="#" class="fa fa-facebook icon-border facebook"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-twitter icon-border twitter"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-google-plus icon-border googleplus"> </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="fa fa-rss icon-border rss"> </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
+            <div class="">
+            	<h3 class="title-w3-agileits title-black-wthree">Ubicación</h3>
+                <div class="">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488.012934658644!2d-64.8609439296029!3d-27.496918873616462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94236e621565c485%3A0xbeb9bfec938bceca!2sHotel%20Termal%20R%C3%ADo%20Hondo!5e0!3m2!1ses-419!2sar!4v1575902093433!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+    <!--//ubicacion-->
+
     <!-- //team -->
     <!-- ====================================================== -->
     <!-- ====================================================== -->
     <!-- 					GALERIA							    -->
     <!-- ====================================================== -->
     <!-- ====================================================== -->
-    <section class="portfolio-w3ls" id="gallery">
+
+<div class="advantages" id="galeria">
+        <div class="container">
+            <div class="">                  
+   <section class="portfolio-w3ls" id="gallery"> 
         <h3 class="title-w3-agileits title-black-wthree">Galeria de Fotos</h3>
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen1.jpg" class="swipebox"><img src="images/imagen1.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -468,7 +430,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen2.jpg" class="swipebox"><img src="images/imagen2.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -476,7 +438,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen3.jpg" class="swipebox"><img src="images/imagen3.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -484,7 +446,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen4.jpg" class="swipebox"><img src="images/imagen4.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -492,7 +454,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen5.jpg" class="swipebox"><img src="images/imagen5.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -500,7 +462,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen6.jpg" class="swipebox"><img src="images/imagen6.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -508,7 +470,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen7.jpg" class="swipebox"><img src="images/imagen7.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -516,7 +478,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen8.jpg" class="swipebox"><img src="images/imagen8.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -524,7 +486,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen9.jpg" class="swipebox"><img src="images/imagen9.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -532,7 +494,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen10.jpg" class="swipebox"><img src="images/imagen10.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -540,7 +502,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen11.jpg" class="swipebox"><img src="images/imagen11.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -548,15 +510,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="col-md-3 gallery-grid gallery1">
             <a href="images/imagen12.jpg" class="swipebox"><img src="images/imagen12.jpg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>Resort Inn</h4>
+                    <h4>Ampliar Foto</h4>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="clearfix"> </div>
-    </section>
-    <!-- //gallery -->
+    </section> 
 
+                </div>
+            </div>
+        </div>
+     
+ <!----------------- galeria ---------------------------->
 
 
 
@@ -770,7 +736,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<div class="col-lg-6 col-md-6 col-sm-6 contact-w3-agile2" data-aos="flip-left">
 			<div class="contact-agileits">
-				<h4>Contactados</h4>
+				<h4> ¿Querés contactarnos?</h4>
 				 <!--<p class="contact-agile2">Sign Up For Our News Letters</p> -->
 				<form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
 					<div class="control-group form-group">
@@ -825,7 +791,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="https://www.instagram.com/hoteltermalriohondo/?hl=es-la" class="fa fa-instagram icon-border instagram"> </a></li> 
 							</ul>
 			</div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1488.012934658644!2d-64.8609439296029!3d-27.496918873616462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94236e621565c485%3A0xbeb9bfec938bceca!2sHotel%20Termal%20R%C3%ADo%20Hondo!5e0!3m2!1ses-419!2sar!4v1575902093433!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			
 			
 		</div>
 		<div class="clearfix"></div>

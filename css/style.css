@@ -44,6 +44,16 @@ label{
 	margin:0;
 }
 /*-- header --*/
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+    position:fixed;
+    z-index:1000;
+    top:0;
+    max-width:2000px;
+    width:100%;
+    box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
 /*--header -top--*/
 .social-bnr-agileits{
 	float:left;
@@ -278,7 +288,7 @@ nav.navbar.navbar-default {
 }
 .navbar-brand {
     padding: 0;
-    font-size: 31px;
+    font-size: 21px;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 25px;
@@ -401,6 +411,9 @@ li.menu__item:nth-child(6) {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 }
+
+
+
 /*-- //nav-effect --*/
 /*-- //header --*/
 /*-- banner-text --*/ 
@@ -943,7 +956,7 @@ li.menu__item:nth-child(6) {
 }
 
 .w3_cube:before {
-	content: "\f1ad";
+	content: "\f000";
 }
 
 .w3_users:before {
@@ -953,6 +966,44 @@ li.menu__item:nth-child(6) {
 .w3_ticket:before {
 	content: "\f1eb";
 }
+
+.w3_auto:before {
+    content: "\f1b9";
+}
+
+.w3_bicicleta:before {
+    content: "\f206";
+}
+
+.w3_sala:before {
+    content: "\f1a5";
+}
+
+
+.w3_spa:before {
+
+    content: "\f06c";
+
+}
+
+.w3_juego:before {
+
+    content: "\f1b3";
+
+}
+
+.w3_masaje:before {
+
+    content: "\f1e7";
+
+}
+
+
+
+
+
+
+
 
 /* title element */
 .cbp-ig-grid .cbp-ig-title {
@@ -1122,7 +1173,7 @@ p.about-para-w3ls {
 /*-- //about --*/
 /*--sevices-section--*/
 .advantages {
-    background: url(../images/services.jpg)no-repeat;
+    background: none;
     min-height: 350px;
     background-size: cover;
 }
@@ -2315,6 +2366,7 @@ color: #fff !important;
 }
 @media(max-width:767px){
 	.navbar-default .navbar-toggle .icon-bar {
+		position: fixed;
 		background-color: #fff;
 	}
 	.navbar-default .navbar-toggle {
@@ -2353,7 +2405,7 @@ color: #fff !important;
 	}
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
 		border: none;
-		position: absolute;
+		position:fixed;
 		width: 100%;
 		background: #a5a5a5;
 		z-index: 999;
